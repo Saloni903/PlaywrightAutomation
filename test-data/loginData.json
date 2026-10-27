@@ -1,0 +1,31 @@
+
+{
+  "validUser": {
+    "username": "john",
+    "password": "demo"
+  },
+  "invalidUser": {
+    "username": "wrong_user_123",
+    "password": "wrong_password_123"
+  },
+  "loginScenarios": [
+    {
+      "username": "john",
+      "password": "demo",
+      "scenario": "valid credentials",
+      "expectedResult": "success"
+    },
+    {
+      "username": "wrong_user_123",
+      "password": "wrong_password_123",
+      "scenario": "invalid credentials",
+      "expectedResult": "failure"
+    },
+    {
+      "username": "",
+      "password": "",
+      "scenario": "empty credentials",
+      "expectedResult": "failure"
+    }
+  ]
+}
